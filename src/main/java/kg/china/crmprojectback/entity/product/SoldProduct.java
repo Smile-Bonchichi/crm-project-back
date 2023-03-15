@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import kg.china.crmprojectback.entity.BaseEntity;
 import kg.china.crmprojectback.entity.user.Employee;
 import lombok.*;
+import lombok.experimental.Accessors;
 import lombok.experimental.FieldDefaults;
 
 import java.math.BigDecimal;
@@ -15,6 +16,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@Accessors(fluent = true)
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class SoldProduct extends BaseEntity {
     @OneToOne
